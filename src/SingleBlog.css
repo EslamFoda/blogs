@@ -1,22 +1,22 @@
-.single-blog{
-    background-color: white;
-    margin: .5rem 0;
-    padding: 1rem;
-    border-radius: .5rem;
-    box-shadow: 0 0 .4rem #8800ff59;
-    transform: scale(.9);
-    transition: all .3s ease;
+.single-blog {
+  background-color: white;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.4rem #8800ff59;
+  transform: scale(0.97);
+  transition: all 0.3s ease;
 }
-.single-blog:hover{
-    transform: scale(1);
+.single-blog:hover {
+  transform: scale(1);
 }
-.name{
-    color: #8800ff;
-    font-size: 1.1rem;
+.name {
+  color: #8800ff;
+  font-size: 1.1rem;
 }
-.preview{
-    margin-top: 1rem;
+.preview {
+  margin-top: 1rem;
 }
-.title{
-    font-size: 1.4rem;
+.title {
+  font-size: 1.4rem;
 }

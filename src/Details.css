@@ -1,61 +1,61 @@
-.details{
-    padding-bottom: 1rem;
+.details {
+  padding-bottom: 1rem;
 }
-.blog-container{
-    padding: 1rem 3rem;
+.blog-container {
+  padding: 1rem 3rem;
 }
-.details-section{
-    background-color: #8800ff;
-    min-height: 16.5rem;
-    padding: 3rem 3rem;
+.details-section {
+  background-color: #8800ff;
+  min-height: 16.5rem;
+  padding: 3rem 3rem;
 }
-.title-detail{
-    color: white;
-    text-align: center;
-    font-size: 3rem;
-    padding-bottom: 1rem;
-    
+.title-detail {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 1rem;
 }
-.blog-details{
-    max-width: 1200px;
-    padding: 1rem;
-    margin: auto;
-    background-color: white;
-    margin-top: -5rem;
-    border-radius: .5rem;
-    line-height: 1.7;
-    box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.39);
-    position: relative;
+.blog-details {
+  max-width: 1200px;
+  padding: 1rem;
+  margin: auto;
+  background-color: white;
+  margin-top: -5rem;
+  border-radius: 0.5rem;
+  line-height: 1.7;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.39);
+  position: relative;
 }
-.blog-name{
-    color: #8800ff;
-    font-weight: bold;
-    margin-top: 1rem;
-    display: inline-block;
+.blog-name {
+  color: #8800ff;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
 }
-.delete{
-    position: absolute;
-    bottom: -1rem;
-    right: 1.5rem;
-    cursor: pointer;
-    background: #ff1c59;
-    color: white;
-    padding: .5rem;
-    border-radius: 50%;
-    transition: all .2s ease-in-out;
+.delete {
+  position: absolute;
+  bottom: -1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  background: #ff1c59;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
 }
-.edit{
-    position: absolute;
-    bottom: -1rem;
-    right: 5.5rem;
-    cursor: pointer;
-    background: #1eee6a;
-    color: white;
-    padding: .5rem;
-    border-radius: 50%;
-    transition: all .2s ease-in-out;
+.edit {
+  position: absolute;
+  bottom: -1rem;
+  right: 5.5rem;
+  cursor: pointer;
+  background: #1eee6a;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
 }
-.delete:hover,.edit:hover{
-    transform: scale(1.1);
-    opacity: .9;
+.delete:hover,
+.edit:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
 }

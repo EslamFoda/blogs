@@ -1,59 +1,58 @@
-form{
-    height: auto;
-    max-width: 30rem;
-    min-width: 250px;
-    margin: -15rem auto;
-    background: rgb(255, 255, 255);
-    padding: 2rem;
-    box-shadow: 0 0 .4rem #8800ff23;
-    border-radius: .5rem;
-
+form {
+  height: auto;
+  max-width: 30rem;
+  min-width: 250px;
+  margin: -15rem auto;
+  background: rgb(255, 255, 255);
+  padding: 2rem;
+  box-shadow: 0 0 0.4rem #8800ff23;
+  border-radius: 0.5rem;
 }
 form h2 {
-    text-align: center;
-    color: #8800ff;
-    margin-bottom: 2rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  color: #8800ff;
+  margin-bottom: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-label{
-    display: block;
-    color: rgba(68, 68, 68, 0.604);
-    margin: 1rem 0;
+label {
+  display: block;
+  color: rgba(68, 68, 68, 0.604);
+  margin: 1rem 0;
 }
-input,textarea{
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid rgb(130, 128, 128);
-    padding-bottom: .5rem;
-    font-size: 1.1rem;
-    
+input,
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(130, 128, 128);
+  padding-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
-textarea{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+textarea {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-input:focus,textarea:focus{
-    outline: none;
-    
-    
+input:focus,
+textarea:focus {
+  outline: none;
 }
-button{
-    display: block;
-    background: rgb(248, 24, 65);
-    border: none;
-    color: white;
-    margin: 2rem auto 0 auto;
-    padding: .5rem 1rem;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all .2s ease-in-out;
+button {
+  display: block;
+  background: rgb(248, 24, 65);
+  border: none;
+  color: white;
+  margin: 2rem auto 0 auto;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
 }
-button:hover{
-    opacity: .8;
+button:hover {
+  opacity: 0.8;
 }
-.container{
-    padding: 1rem;
+.container {
+  padding: 1rem;
 }
-.btn-disabled{
-    cursor: not-allowed;
-    opacity: .8;
+.btn-disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
 }

@@ -5,19 +5,19 @@ nav {
   padding: 1rem 3rem;
   color: white;
 }
-.logo{
+.logo {
   font-size: 1.5rem;
 }
 .link {
   margin-right: 3rem;
-  padding-bottom: .3rem;
- 
+  padding-bottom: 0.3rem;
 }
-.create-link{
-  padding-bottom: .3rem;
+.create-link {
+  padding-bottom: 0.3rem;
 }
-.link:hover,.create-link:hover{
-    border-bottom: 1px solid white;
+.link:hover,
+.create-link:hover {
+  border-bottom: 1px solid white;
 }
 
 nav a {
@@ -27,25 +27,25 @@ nav a {
 .Nav-section {
   background-color: #8800ff;
 }
-.hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    color: white;
-    line-height: 2;
-    padding: 3rem;
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  line-height: 2;
+  padding: 3rem;
 }
 .create {
-    background-color: #550a979a;
-    color: white;
-    text-decoration: none;
-    margin-top: 1.5rem;
-    padding: .5rem 1.5rem;
-    border-radius: 3rem;
-    color: #FFFF00;
+  background-color: #550a979a;
+  color: white;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  color: #ffff00;
 }
-.create:hover{
-    opacity: .9;
+.create:hover {
+  opacity: 0.9;
 }

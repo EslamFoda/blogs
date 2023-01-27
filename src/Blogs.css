@@ -1,37 +1,45 @@
-.blog-section{
-    padding: 1rem 3rem;
-    background-color: #ECECEC;;
+.blog-section {
+  padding: 1rem 3rem;
+  background-color: #ececec;
 }
-.header{
-    font-size: 1.2rem;
-    padding-bottom: 1rem;
+.header {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+.blog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 @media only screen and (max-width: 834px) {
   .blog-section {
-      padding: 1rem 1rem;
+    padding: 1rem 1rem;
   }
-  nav{
-      padding: 1rem;
+  nav {
+    padding: 1rem;
   }
 }
-@media only screen and (max-width: 686px){
-    html{
-        font-size: 80%;
-    }
-
+@media only screen and (max-width: 686px) {
+  html {
+    font-size: 80%;
+  }
+  .blog-list {
+    grid-template-columns: 1fr;
+  }
 }
-@media only screen and (max-width: 414px){
-    .hero{
-        padding: 1.5rem 1rem;
-    }
-  .blog-container{
+@media only screen and (max-width: 414px) {
+  .hero {
+    padding: 1.5rem 1rem;
+  }
+  .blog-container {
     padding: 1rem !important;
   }
-  .single-blog{
-      margin: 0 !important;
+  .single-blog {
+    margin: 0 !important;
   }
-  .delete,.edit{
-      padding: .3rem !important;
+  .delete,
+  .edit {
+    padding: 0.3rem !important;
   }
 }
