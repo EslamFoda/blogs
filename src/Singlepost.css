@@ -1,4 +1,4 @@
-.single-blog {
+.single-post {
   background-color: white;
   margin: 0.5rem 0;
   padding: 1rem;
@@ -7,7 +7,7 @@
   transform: scale(0.97);
   transition: all 0.3s ease;
 }
-.single-blog:hover {
+.single-post:hover {
   transform: scale(1);
 }
 .name {
