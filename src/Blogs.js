@@ -5,10 +5,9 @@ import { useEffect, useState } from "react";
 import SingleBlog from "./SingleBlog";
 import { gql, useQuery } from "@apollo/client";
 const Blogs = () => {
-  const [blogs, setBlogs] = useState(null);
-  // const [loading, setLoading] = useState(false);
+  // const [posts, setPosts] = useState(null);
 
-  const query = gql`
+  const allPosts = gql`
     query {
       posts {
         __typename
@@ -16,37 +15,25 @@ const Blogs = () => {
         title
         content
         picture
+        createdAt
       }
     }
   `;
 
-  // const singe_post = gql`
-  //   query ($id: Int!) {
-  //     post(id: $id) {
-  //       __typename
-  //       id
-  //       title
-  //       content
-  //       picture
-  //     }
-  //   }
-  // `;
+  const { data, loading, error } = useQuery(allPosts);
+  // console.log(data?.posts, "asdasd");
+  // useEffect(()=>{
+  //   setPosts(data?.posts)
 
-  // const { data: singlepost } = useQuery(singe_post, {
-  //   variables: {
-  //     id: 1,
-  //   },
-  // });
-
-  const { data, loading, error } = useQuery(query);
-  console.log(data?.posts, "asdasd");
+  // },[data?.posts])
+  const posts = data?.posts
 
   return (
     <section className="blog-section">
       <h1 className="header">LATEST BLOGS</h1>
-      {data?.posts && (
+      {posts && (
         <div className="blog-list">
-          {data?.posts.map((blog) => {
+          {posts?.map((blog) => {
             return <SingleBlog blog={blog} key={blog.id} />;
           })}
         </div>

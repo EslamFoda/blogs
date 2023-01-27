@@ -9,6 +9,10 @@
   min-height: 16.5rem;
   padding: 3rem 3rem;
 }
+.time{
+    font-size: 12px;
+    color: gray;
+}
 .title-detail {
   color: white;
   text-align: center;
