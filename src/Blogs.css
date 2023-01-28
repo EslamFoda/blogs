@@ -8,11 +8,15 @@
 }
 .blog-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 }
 
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 1000px) {
+  .blog-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
   .blog-section {
     padding: 1rem 1rem;
   }
@@ -42,4 +46,23 @@
   .edit {
     padding: 0.3rem !important;
   }
+}
+
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -14px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: .4rem; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 14px;
+  /* @apply rounded-md overflow-hidden */
 }

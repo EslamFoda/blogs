@@ -35,6 +35,14 @@ const Details = () => {
       <div className="blog-container">
         {blog && (
           <div className="blog-details">
+            <img
+              className="detail-img"
+              src={
+                blog.picture
+                  ? blog.picture
+                  : "https://www.ninjaseo.com.au/wp-content/uploads/2016/07/placeholder4.png"
+              }
+            />
             <p>{blog?.content}</p>
             <span className="time">
               {moment(blog?.createdAt).format("llll")}
