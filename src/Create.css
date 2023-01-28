@@ -56,3 +56,120 @@ button:hover {
   cursor: not-allowed;
   opacity: 0.8;
 }
+
+.image-container {
+  height: 100px;
+  width: 150px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.uploaded-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.overlay{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 8px;
+  
+}
+.overlay:hover .delete-img-container{
+  display: flex;
+}
+.delete-img-container{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  /* display: flex; */
+  display: none;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.473);
+  color: white;
+}
+.delete-img-container span {
+  background: red;
+  cursor: pointer;
+}
+
+.loading-upload-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.loading-upload-container > span {
+  font-size: 12px;
+}
+.image-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.plus-icon {
+  font-size: 25px;
+}
+.upload-text {
+  font-size: 14px;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  margin-left: -5px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #8800ff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #8800ff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
